@@ -1,5 +1,6 @@
 # 얼굴표정인식 프로젝트(Facial Expression Recognition)
 (해당 프로젝트는 아래의 링크를 참고했습니다.)
+
 https://github.com/jy6zheng/FacialExpressionRecognition
 
 
@@ -24,12 +25,13 @@ https://www.kaggle.com/jonathanoheix/face-expression-recognition-dataset
 
 얼굴 표정 인식 관련 알고리즘은 Sarrafzadeh et al. (2008)부터 시작되었습니다.
 기존 연구들은 Support Vector Machine (SVM)이 가장 많이 사용되었으며
-그 외 Deep Belief Network(DBN), Convolutional Neural Network(CNN), Principal Component Analysis(PCA) 등이 사용되었습니다(딥러닝 표정 인식을 활용한 실시간 온라인 강의 이해도 분석 학술 자료 참고).
+그 외 Deep Belief Network(DBN), Convolutional Neural Network(CNN), Principal Component Analysis(PCA) 등이 사용되었습니다
+(딥러닝 표정 인식을 활용한 실시간 온라인 강의 이해도 분석 학술 자료 참고).
 
 
 ![image](https://user-images.githubusercontent.com/79177935/129285381-af809361-23a5-45cc-886c-39ad589a6fd2.png)
 
-한 사람이 느끼는 감정들은 표정으로 드러나는 경우가 많은데
+👀 한 사람이 느끼는 감정들은 표정으로 드러나는 경우가 많은데
 행복하고, 슬프고 이러한 감정을 인공지능은 어떻게 판단하는 것일까요?
 
 
@@ -52,6 +54,7 @@ https://www.kaggle.com/jonathanoheix/face-expression-recognition-dataset
 
 4. 기본 데이터에 가장 적합한 Learning rate을 찾아 적용
 - Learning rate은 아주 작은 학습률로 시작해 손실이 얼마인지 파악한 다음 학습률을 일정 비율 높이면서 손실이 더 심해질 때까지 반복하는 방법
+
 ![image](https://user-images.githubusercontent.com/79177935/129286521-12e79f4f-b2d4-43cd-bbec-beef6576e6b2.png)
 
 
@@ -59,10 +62,13 @@ https://www.kaggle.com/jonathanoheix/face-expression-recognition-dataset
 ## 모델 학습 결과
 1. Learning rate을 그래프를 통해 손실이 낮은 구간으로 자르고 학습 시킨 결과, 정확도 66%를 가지는 결과가 나왔습니다.
 
-2. Confusion matrix를 통해 실제값과 예측값을 비교해본 결과, 'happy'가 가장 잘 분류되었으며 'disgust'의 감정은 다른 데이터에 비해 데이터 수가 부족했고 잘 분류되지 않는 것으로 보였습니다. 'angry'의 감정과 데이터를 합치는 것도 고려해야 할 것 같습니다.
+2. Confusion matrix를 통해 실제값과 예측값을 비교해본 결과, 'happy'가 가장 잘 분류되었으며 
+'disgust'의 감정은 다른 데이터에 비해 데이터 수가 부족했고 잘 분류되지 않는 것으로 보였습니다. 
+'angry'의 감정과 데이터를 합치는 것도 고려해야 할 것 같습니다.
 
 3. 손실값이 가장 높은 샘플 데이터 이미지를 출력한 결과
 ![image](https://user-images.githubusercontent.com/79177935/129286805-dd917f2a-f07f-4c4f-bd32-5d1ba26dfe89.png)
+
 왼쪽은 모델이 예측한 감정이고 오른쪽은 원래 분류된 감정인데,
 원래 분류된 감정보다 예측된 감정이 더 적절해 보이는 경우가 많았습니다.
 
