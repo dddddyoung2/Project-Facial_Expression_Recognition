@@ -71,6 +71,8 @@ https://www.kaggle.com/jonathanoheix/face-expression-recognition-dataset
 ## 캠을 통해 실시간 감정 인식 적용 예시
 학습한 모델을 OpenCV를 통해 영상에 적용하면 실시간으로 얼굴 표정을 인식할 수 있으며 감정을 확률로 보여줍니다. 눈의 모양과 입의 모양의 픽셀값들이 실시간으로 계산되는 것입니다.
 
+![image](https://user-images.githubusercontent.com/79177935/136243790-38a4f989-0e51-4e74-8402-486bf0d88588.png)
+
 
 
 ## 모델의 한계
@@ -89,6 +91,7 @@ https://www.kaggle.com/jonathanoheix/face-expression-recognition-dataset
 1. 게임 몰입도 증진에 활용할 수 있습니다.
 
 ![image](https://user-images.githubusercontent.com/79177935/129287149-7d9fb624-2f20-4f77-8d04-7313a0ed7f34.png)
+
 감정 분류에 지루함과 집중함 감정 추가하고
 실시간으로 지루한 감정이 포착되면 
 게임 중 장애물을 내보내 게임에 집중하게 만드는 것입니다.
@@ -96,6 +99,7 @@ https://www.kaggle.com/jonathanoheix/face-expression-recognition-dataset
 2. AI 상담에 활용할 수 있습니다.
 
 ![image](https://user-images.githubusercontent.com/79177935/129287245-6b3fd302-613d-4b16-8c0f-4a14bd45ee1a.png)
+
 고민의 카테고리별로 상담 데이터를 모으고,
 친숙한 캐릭터를 골라 상담을 진행할 수 있습니다.
 카메라를 통해서 실시간으로 감정과 행동을 파악해
