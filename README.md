@@ -68,7 +68,7 @@ https://www.kaggle.com/jonathanoheix/face-expression-recognition-dataset
 
 
 
-## 캠을 통해 실시간 감정 인식 적용 예시(업데이트 중)
+## 캠을 통해 실시간 감정 인식 적용 예시
 학습한 모델을 OpenCV를 통해 영상에 적용하면 실시간으로 얼굴 표정을 인식할 수 있으며 감정을 확률로 보여줍니다. 눈의 모양과 입의 모양의 픽셀값들이 실시간으로 계산되는 것입니다.
 
 
